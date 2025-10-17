@@ -1,11 +1,24 @@
+# Credit Risk Probability of Default (PD) Model
 
-# Credit Risk PD & FICO Bucketing (Prototype)
+This project replicates part of a **Quantitative Research internship simulation (J.P. Morgan Forage)**.  
+It develops a predictive **Probability of Default (PD)** model and a **FICO-based credit rating bucketer**, 
+using real-world-style loan data and modern data-science tools.
 
-A clean, reproducible prototype for **personal-loan default prediction** and **mortgage FICO bucketing**:
+---
 
-- **PD model** (Logistic Regression baseline) on tabular borrower features
-- **Expected Loss** function: `EL = PD × EAD × (1 − Recovery)` (defaults to 10% recovery)
-- **FICO Bucketizer** (MSE / 1-D k-means): maps `fico_score` → categorical **ratings** (1 = best)
-- Lightweight scripts + notebook, intended as a starting point for model validation + productionization
+## 📊 Project Overview
 
-> ⚠️ Data is kept private. See `data/README.md` for how to place your CSV locally.
+**Objective:**  
+Estimate borrower default probability and group borrowers into discrete credit-rating buckets for risk assessment.
+
+**Key Techniques:**
+- Logistic regression for PD estimation  
+- FICO-score bucketing via 1-D *k-means* (minimizing MSE)  
+- Visualization of borrower distribution and default probability  
+- Clean modular code organized for reproducibility
+
+---
+
+## 🗂️ Repository Structure
+
+
