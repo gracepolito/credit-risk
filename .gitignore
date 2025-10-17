@@ -1,0 +1,19 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+*.egg-info/
+
+# Data / artifacts
+data/*.csv
+data/*.parquet
+data/*.json
+reports/*.png
+reports/*.pdf
+reports/*.html
+
+# OS
+.DS_Store
